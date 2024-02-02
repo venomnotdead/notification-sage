@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home Page</title>
+    <title>Login Page</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -24,25 +24,34 @@
 </head>
 <body>
 
-<!-- Include the navbar -->
-<div id="navbar-container"></div>
-<script>
-    // Load the navbar content using JavaScript
-    document.getElementById('navbar-container').innerHTML = '<object type="text/html" data="navbar.html"></object>';
-</script>
-
 <div class="container-fluid">
-    <div class="row justify-content-center">
+    <div class="row align-items-center">
         <!-- Left half - College Logo -->
         <div class="col-md-6 logo-container">
-            <img src="path/to/college-logo.png" alt="College Logo">
+            <img src="./sagelogo.jpeg" alt="College Logo">
         </div>
 
-        <!-- Right half - Home Page Content -->
+        <!-- Right half - Login Form -->
         <div class="col-md-6">
-            <!-- Your home page content goes here -->
-            <h2>Welcome to College Name!</h2>
-            <p>This is the home page content.</p>
+            <div class="card mt-5">
+                <div class="card-header">
+                    <h3 class="text-center">Login</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                            <small class="form-text text-muted">Please enter a valid email address.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </div>
