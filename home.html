@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .mainDiv {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .secondDiv {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imageTwo {
+            animation: shakeX 8s infinite, shakeY 9s infinite;
+        }
+
+        .imageOne {
+            animation: shakeX 10s infinite, shakeY 10s infinite;
+        }
+
+        .textDiv {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .mainText {
+            font-size: 100px;
+        }
+
+        .secondText {
+            font-size: 15px;
+            padding: 20px;
+
+        }
+        button{
+            border: 0;
+            font-size: 20px;
+            border-radius: 10px;
+            padding: -10px;
+            background-color: #2c2c2b;
+            color: white;
+        }
+        .yelloCircle{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: rgb(255, 221, 0);
+            position: absolute;
+            z-index: -1;
+            top: 50px;
+            left: 90px;
+            opacity: 0.7;
+        }
+        .yelloCircle2{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgb(255, 221, 0);
+            position: absolute;
+            z-index: -1;
+            top: 500px;
+            left: 400px;
+            opacity: 0.7;
+        }
+        .yelloCircle3{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: rgb(255, 221, 0);
+            position: absolute;
+            z-index: -1;
+            top: 170px;
+            left: 700px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mainDiv">
+        <div class="yelloCircle"></div>
+        <div class="yelloCircle2"></div>
+        <div class="yelloCircle3"></div>
+        <div class="secondDiv textDiv">
+            <div class="mainText">Creative mind</div>
+            <div class="secondText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eaque qui optio?
+                Autem, iusto? Accusantium debitis ad magni tenetur nulla corporis, ut maiores totam, quasi odit,
+                veritatis quos saepe esse.</div>
+            <div>
+                <Button>MORE</Button>
+            </div>
+        </div>
+        <div class="secondDiv">
+            <!-- <img class="imageOne"
+                src="https://img.freepik.com/free-vector/business-man-working-hard-stock-financial-trade-market-diagram-vector-illustration-flat-design_1150-39773.jpg?w=740&t=st=1707504248~exp=1707504848~hmac=d60435797683b5fa13e3de2b8683c1063cdd6d67a43b31e03dbc74d2cceab005"> -->
+            <img class="imageTwo"
+                src="https://img.freepik.com/free-vector/flat-creativity-concept-illustration_52683-64279.jpg?w=740&t=st=1707504487~exp=1707505087~hmac=99f0ae4860c66137a0faa566d8061dd1c8ced90e35370b63e371b932af1adfc2">
+        </div>
+    </div>
+
+</body>
+
+</html>
